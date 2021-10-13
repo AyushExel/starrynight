@@ -38,7 +38,6 @@ def show(img):
 
 def saveimg(img, image_path):
     img = img.clip(0, 255)
-    print("saving image")
     cv2.imwrite(image_path, img)
 
 # Preprocessing ~ Image to Tensor

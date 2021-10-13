@@ -1,46 +1,28 @@
-import React, { useState, useEffect } from 'react'
-import { Carousel } from 'react-bootstrap';
+import React from "react";
+import { Carousel } from "react-bootstrap";
 
 function HomeCaraousel() {
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-    };
-
-    return (
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={2000} className="w-50">
+  var examples = [
+    "home/styled1.jpg",
+    "home/styled2.jpg",
+    "home/styled3.jpg",
+    "home/styled4.jpg",
+  ];
+  return (
+    <div className="w-50 mx-auto p-5" style={{ width: "40em", height: "35em" }}>
+      <Carousel interval={2000}>
+        {examples.map(function (path) {
+          console.log(path);
+          return (
             <Carousel.Item>
-                <img
-                    className="d-block"
-                    src="home/styled1.png"
-                    alt="Styled image 1"
-                />
-                <Carousel.Caption>
-                </Carousel.Caption>
+              <img className="d-block" src={path} alt="" />
+              <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block"
-                    src="home/styled2.png"
-                    alt="Styled image 2"
-                />
-
-                <Carousel.Caption>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block"
-                    src="home/styled3.png"
-                    alt="Styled image 3"
-                />
-
-                <Carousel.Caption>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
-    );
+          );
+        })}
+      </Carousel>
+    </div>
+  );
 }
 
 export default HomeCaraousel;
