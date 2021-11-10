@@ -15,3 +15,6 @@ An application to train, experiment with, and deploy real-time style transfer mo
 
 1. cd into `backend` and run `python manage.py runserver`
 2. cd into `frontend` and run `npm start`
+
+# Credits
+* Pretrained models were taken from https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
