@@ -52,6 +52,6 @@ def stylize(model=None, content_image=None, output_path='output/result.jpg', con
             generated_image = utils.transfer_color(
                 content_image, generated_image)
         print("Transfer Time: {}".format(time.time() - starttime))
-        utils.saveimg(generated_image, str(random.randint(1,100000))+output_path)
+        #utils.saveimg(generated_image, str(random.randint(1,100000))+output_path)
         # utils.show(generated_image)
     return generated_image

@@ -8,7 +8,6 @@ from django.urls import path
 from .views import PostImage, GetModels, uploadImage
 
 urlpatterns = [
-    path("style/", PostImage.as_view(), name="style"),
-    path("stylev2/", uploadImage, name="stylev2"),
+    path("style/", uploadImage, name="style"),
     path("models/", GetModels.as_view(), name="models")
 ]

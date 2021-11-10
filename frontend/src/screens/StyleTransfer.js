@@ -50,7 +50,7 @@ function StyleTransferCarousel() {
         },
       };
       const { data } = await axios.post(
-        "/style_transfer/stylev2/",
+        "/style_transfer/style/",
         formData,
         config
       );

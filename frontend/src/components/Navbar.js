@@ -21,7 +21,7 @@ const DefaultNavbar = () => {
     <Navbar bg="dark" expand="lg">
       <Navbar.Brand>
         <Nav.Link>
-          <Link to="/home">
+          <Link to="/">
             {" "}
             <img
               src="/stary.jpg"

@@ -3,8 +3,8 @@ import { Carousel } from "react-bootstrap";
 
 function HomeCaraousel() {
   var examples = [
-    "home/styled1.jpg",
     "home/styled2.jpg",
+    "home/styled1.jpg",
     "home/styled3.jpg",
     "home/styled4.jpg",
   ];
