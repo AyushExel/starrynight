@@ -3,6 +3,7 @@
 An application to train, experiment with, and deploy real-time style transfer models
 
 # Demo
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/15766192/141136055-0bd08f88-2445-421a-bcfc-05680daa4730.gif)
 
 # Installation
 
